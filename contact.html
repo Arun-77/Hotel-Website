@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=Lora:ital@1&family=Noto+Sans:wght@600&family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet">
+
+   <link rel="stylesheet" href="/style.css">
+   <title>Hotel Royal | Contact</title>
+   <link rel="icon" href="/hotel.png">
+</head>
+
+<body class="scroll-unlock">
+   <section class="load">
+      <div class="loader"></div>
+      <h2>LOADING...</h2>
+   </section>
+
+   <section class="body">
+      <header>
+         <nav class="navbar">
+            <div>
+               <h2 class="logo">HR</h2>
+               <h2 class="title">Hotel Royal</h2>
+            </div>
+            <label for="toggle" aria-label="toggle_navbar" class="toggle-label">
+               <div class="hamburger" id="hamburger">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+               </div>
+            </label>
+            <ul class="navlist">
+               <li>
+                  <a href="index.html">Home</a>
+               </li>
+               <li>
+                  <a href="about.html">About</a>
+               </li>
+               <li>
+                  <a class="active" href="contact.html">Contact</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <section class="contact">
+         <div class="contain">
+
+            <div class="form">
+               <h4><span>GET IN TOUCH</span></h4>
+               <h2 class="form-headline">Have a Query, Send us a message</h2>
+               <form id="submit-form" action="">
+                  <p>
+                     <input id="name" class="form-input" type="text" placeholder="Your Name" required>
+                     <small class="name-error"></small>
+                  </p>
+                  <p>
+                     <input id="email" class="form-input" type="email" placeholder="Your Email" required>
+                     <small class="name-error"></small>
+                  </p>
+                  <p>
+                     <input id="phone-number" class="form-input" type="number" placeholder="Phone Number" required>
+                     <small></small>
+                  </p>
+                  <p>
+                     <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message"
+                        required></textarea>
+                     <small></small>
+                  </p>
+                  <p>
+                     <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive
+                     communications
+                     by call / email about Our Hotel's services.
+                  </p>
+                  <p>
+                     <button class="reset-btn" onclick="reset()">Reset</button>
+                     <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                  </p>
+                  <div class="clr"></div>
+               </form>
+            </div>
+
+         </div>
+      </section>
+   </section>
+   <script src="/main.js"></script>
+   <script src="/contact.js"></script>
+</body>
+
+</html>
